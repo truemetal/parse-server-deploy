@@ -8,7 +8,7 @@ You're welcome to browse the .sh file and hack your own out of it, or just use t
 
 Steps: 
 - Deploy an ubuntu 16.04 VPS instance with your favorite provider and login as root
-- run `curl -s -L https://github.com/truemetal/parse-server-deploy/raw/master/deploy-parse.sh -o ~/deploy.sh && chmod +x ~/deploy.sh && ~/deploy.sh`
+- run `bash <(curl -s -L https://github.com/truemetal/parse-server-deploy/raw/master/deploy-parse.sh)`
 
 And in around 5 minutes you're done! 
 
