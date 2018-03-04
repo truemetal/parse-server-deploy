@@ -12,7 +12,7 @@ Steps:
 
 And in around 5 minutes you're done! 
 
-## Warning: not deployment safe, for development instances only!
+## Warning: not production safe, for development instances only!
 
 ## TODO:
 
