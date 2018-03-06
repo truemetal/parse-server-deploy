@@ -6,11 +6,26 @@ This repo contains a script (and it is a perfect manuals at the same time) that 
 
 You're welcome to browse the .sh file and hack your own out of it, or just use the commands below to quickly get the job done.
 
-Steps: 
+## Features
+
+- Completely automated deployment process, one script to do it all
+- `app-id`, `master-key` and dashboard login key are generated, and not stored in the repo
+
+## Deployment
+
 - Deploy an ubuntu 16.04 VPS instance with your favorite provider and login as root
 - run `bash <(curl -s -L https://github.com/truemetal/parse-server-deploy/raw/master/deploy-parse.sh)`
+- upon start, the script will uudigen credentials and pause; you can just copy those and hit enter to proceed
 
 And in around 5 minutes you're done! 
+
+## What the script does:
+
+- update the system
+- install node
+- install mongo
+- generate files for basic `parse-server` and `parse-dashboard`
+- `npm install` and run the app using `pm2`
 
 ## Warning: not production safe, for development instances only!
 
