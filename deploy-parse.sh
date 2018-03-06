@@ -5,7 +5,7 @@ fi
 export APP_ID=$(uuidgen)
 export MASTER_KEY=$(uuidgen)
 export DASHBOARD_LOGIN_USER="parse"
-export DASHBOARD_LOGIN_PASSWORD="parse"
+export DASHBOARD_LOGIN_PASSWORD=$(uuidgen)
 export IP=$(curl -s api.ipify.org)
 
 echo ""
